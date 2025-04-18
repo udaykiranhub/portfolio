@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --primary: #0d6efd;
+  --secondary: #6c757d;
+  --success: #198754;
+  --danger: #dc3545;
+  --warning: #ffc107;
+  --info: #0dcaf0;
+  --dark: #121212;
+  --light: #f8f9fa;
+  --neon-glow: 0 0 10px #0d6efd, 0 0 20px #0d6efd, 0 0 30px #0d6efd;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--dark);
+  color: var(--light);
+}
+
+.neon-text {
+  color: var(--primary);
+  text-shadow: var(--neon-glow);
+}
+
+.neon-border {
+  border: 2px solid var(--primary);
+  box-shadow: var(--neon-glow);
+}
+
+.neon-header {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: var(--primary);
+}
+
+.page-section {
+  padding: 5rem 0;
+}
+
+/* Animation Classes */
+.fade-in {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1e1e1e;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0b5ed7;
+}
+
+/* Bootstrap Overrides */
+.btn-primary {
+  background-color: var(--primary);
+  border-color: var(--primary);
+}
+
+.btn-primary:hover {
+  background-color: #0b5ed7;
+  border-color: #0a58ca;
+}
+
+.card {
+  background-color: #1e1e1e;
+  border: 1px solid #333;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.modal-content {
+  background-color: #1e1e1e;
+  color: var(--light);
+  border: 1px solid #333;
+}
+
+.modal-header {
+  border-bottom: 1px solid #333;
+}
+
+.modal-footer {
+  border-top: 1px solid #333;
+}
+
+.alert {
+  border: none;
+}
+
+.alert-success {
+  background-color: rgba(25, 135, 84, 0.1);
+  color: var(--light);
+  border-left: 4px solid var(--success);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2rem;
+  }
+  
+  .page-section {
+    padding: 3rem 0;
+  }
+}
