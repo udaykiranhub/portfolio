@@ -1,8 +1,46 @@
 import React, { useState } from 'react';
-import { Container, Row, Col, Card, Badge, Button, Tab, Nav } from 'react-bootstrap';
+import { 
+  Container, 
+  Row, 
+  Col, 
+  Card, 
+  Badge, 
+  Button, 
+  Tab, 
+  Nav, 
+  Carousel,
+  Modal
+} from 'react-bootstrap';
 import { Github, ExternalLink } from 'lucide-react';
 import { useInView } from 'react-intersection-observer';
-import ProjectModal from '../components/ProjectModal';
+
+import  School  from "../images/school-1.png";
+import  Schoo2  from "../images/school-2.png";
+import  Schoo3  from "../images/school-3.png";
+import flight1 from "../images/flight-1.png";
+import flight2 from "../images/flight-2.png";
+
+import ecomerce1 from "../images/ecomerce-1.png";
+import ecomerce2 from "../images/ecommerce-2.png";
+
+import ecomerce3 from "../images/ecommerce-3.png"
+
+import donor1 from "../images/donor1.png"
+import donor2 from "../images/donor2.png";
+import donor3 from "../images/donor3.png";
+import donor4 from "../images/donor4.png";
+import donor5 from "../images/donor5.png"
+
+
+import voting1 from "../images/voting1.png";
+import voting2 from "../images/voting2.png";
+import supplychain from "../images/supplychain.png";
+
+import usdt1 from "../images/usdt1.png";
+import usdt2 from "../images/usdt2.png";
+import usdt3 from "../images/usdt3.png";
+import usdt4 from "../images/usdt4.png";
+import usdt5 from "../images/usdt5.png"
 
 const Projects = () => {
   const [showModal, setShowModal] = useState(false);
@@ -23,7 +61,11 @@ const Projects = () => {
       id: 1,
       title: "School Management Application",
       description: "A complete school management system from LKG to Degree with multiple user dashboards.",
-      image: "https://images.pexels.com/photos/256417/pexels-photo-256417.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      images: [
+        School,
+       Schoo2,
+        Schoo3
+      ],
       technologies: ["MongoDB", "Express.js", "React.js", "Node.js", "Redux"],
       features: [
         "Multi-level user dashboards (Main Admin, Branch Admin, Teacher)",
@@ -36,39 +78,32 @@ const Projects = () => {
     },
     {
       id: 2,
-      title: "Student Portfolio Website",
-      description: "A platform for students to showcase their skills and connect with others.",
-      image: "https://images.pexels.com/photos/3861958/pexels-photo-3861958.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      technologies: ["MongoDB", "Express.js", "React.js", "Node.js", "Material UI"],
-      features: [
-        "User profiles with customizable portfolios",
-        "Project showcase section",
-        "Skill endorsement system",
-        "Networking features",
-        "Responsive design"
+      title: "Simple DAPP for Blood donors",
+      description: "This platform provides a secure way to donate blood with block chain.",
+      images: [
+    donor1,
+    donor2,
+    donor4,
+    donor4,
+    donor5
       ],
-      category: "MERN Stack"
+      technologies: ["MongoDB", "Express.js", "React.js", "Node.js", "Solidity","Ethereum","web3.js"],
+      features: [
+     " A donor can donate blood in a secure way ",
+     " provides decentralization "
+      ],
+      category: "Block Chain"
     },
+
     {
       id: 3,
-      title: "Workers Management Website",
-      description: "A platform for seamless collaboration among workers and teams.",
-      image: "https://images.pexels.com/photos/3183183/pexels-photo-3183183.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      technologies: ["MongoDB", "Express.js", "React.js", "Node.js", "Socket.io"],
-      features: [
-        "Team management and organization",
-        "Task assignment and tracking",
-        "Real-time collaboration tools",
-        "Performance metrics",
-        "Time tracking"
-      ],
-      category: "MERN Stack"
-    },
-    {
-      id: 4,
       title: "E-commerce Platform",
-      description: "A Redux-based e-commerce product listing with advanced search and filter functionality.",
-      image: "https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      description: "This is the platform to buy and sell the natrual products.",
+      images: [
+     ecomerce1,
+     ecomerce2,
+     ecomerce3
+      ],
       technologies: ["MongoDB", "Express.js", "React.js", "Node.js", "Redux", "Bootstrap"],
       features: [
         "Advanced search and filtering",
@@ -83,10 +118,13 @@ const Projects = () => {
 
   const blockchainProjects = [
     {
-      id: 5,
+      id: 4,
       title: "Decentralized Voting Application",
       description: "A blockchain-based voting system using Ethereum for secure and transparent elections.",
-      image: "https://images.pexels.com/photos/1550337/pexels-photo-1550337.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      images: [
+   voting1,
+   voting2
+      ],
       technologies: ["Solidity", "Ethereum", "Web3.js", "React.js", "MetaMask"],
       features: [
         "Secure, tamper-proof voting",
@@ -98,10 +136,14 @@ const Projects = () => {
       category: "Blockchain"
     },
     {
-      id: 6,
+      id: 5,
       title: "DeFi Staking Platform",
       description: "A decentralized finance application for staking cryptocurrency tokens.",
-      image: "https://images.pexels.com/photos/844124/pexels-photo-844124.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      images: [
+        "https://images.pexels.com/photos/844124/pexels-photo-844124.jpeg",
+        "https://images.pexels.com/photos/730564/pexels-photo-730564.jpeg",
+        "https://images.pexels.com/photos/1435412/pexels-photo-1435412.jpeg"
+      ],
       technologies: ["Solidity", "Ethereum", "Web3.js", "React.js", "Truffle"],
       features: [
         "Token staking functionality",
@@ -113,10 +155,12 @@ const Projects = () => {
       category: "Blockchain"
     },
     {
-      id: 7,
+      id: 6,
       title: "Supply Chain Management",
       description: "Blockchain solution for tracking agricultural products through various supply chain stages.",
-      image: "https://images.pexels.com/photos/2130137/pexels-photo-2130137.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      images: [
+supplychain
+      ],
       technologies: ["Solidity", "Ethereum", "IPFS", "React.js", "Node.js"],
       features: [
         "Product tracking from farm to consumer",
@@ -128,10 +172,13 @@ const Projects = () => {
       category: "Blockchain"
     },
     {
-      id: 8,
+      id: 7,
       title: "Flight Booking Smart Contract",
       description: "A decentralized system for secure flight bookings using cryptocurrency.",
-      image: "https://images.pexels.com/photos/358319/pexels-photo-358319.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      images: [
+     flight1,
+     flight2
+      ],
       technologies: ["Solidity", "Ethereum", "Web3.js", "React.js", "Bootstrap"],
       features: [
         "Secure flight booking",
@@ -139,6 +186,26 @@ const Projects = () => {
         "Loyalty program integration",
         "Real-time flight status updates",
         "Cryptocurrency payment processing"
+      ],
+      category: "Blockchain"
+    },
+
+    {
+      id: 8,
+      title: "USDT pool for web2 services",
+      description: "This platform provides a way to access web2 resource with USDT tokens.",
+      images: [
+
+usdt2,
+usdt3,
+usdt4,
+usdt5
+      ],
+      technologies: ["Solidity", "Ethereum", "Web3.js", "MERN"],
+      features: [
+    "Provides pool for USDT",
+    "Rewards as per stake ",
+    "Can access the service from the web2"
       ],
       category: "Blockchain"
     }
@@ -161,13 +228,18 @@ const Projects = () => {
       <Col md={6} lg={4} className="mb-4" key={project.id}>
         <Card className="h-100 bg-dark text-light border-0 shadow">
           <div className="position-relative project-card-img-container">
-            <Card.Img 
-              variant="top" 
-              src={project.image} 
-              alt={project.title}
-              className="project-card-img"
-              style={{ height: '200px', objectFit: 'cover' }}
-            />
+            <Carousel fade indicators={false} controls={project.images.length > 1}>
+              {project.images.map((img, idx) => (
+                <Carousel.Item key={idx}>
+                  <img
+                    className="d-block w-100 project-card-img"
+                    src={img}
+                    alt={`${project.title} screenshot ${idx + 1}`}
+                    style={{ height: '200px', objectFit: 'cover' }}
+                  />
+                </Carousel.Item>
+              ))}
+            </Carousel>
             <div className="project-overlay">
               <Button 
                 variant="primary" 
@@ -185,7 +257,7 @@ const Projects = () => {
               {project.technologies.slice(0, 3).map((tech, index) => (
                 <Badge 
                   key={index} 
-                  bg={project.category === "MERN Stack" ? "primary" : "warning"}
+                  bg={project.category === "MERN Stack" ? "primary" : "primary"}
                   className="me-1"
                 >
                   {tech}
@@ -197,7 +269,7 @@ const Projects = () => {
             </div>
           </Card.Body>
           <Card.Footer className="bg-dark border-0 d-flex justify-content-between">
-            <Badge bg={project.category === "MERN Stack" ? "info" : "warning"} pill>
+            <Badge bg={project.category === "MERN Stack" ? "info" : "info"} pill>
               {project.category}
             </Badge>
             <Button 
@@ -210,6 +282,60 @@ const Projects = () => {
           </Card.Footer>
         </Card>
       </Col>
+    );
+  };
+
+  const ProjectModal = ({ project, show, handleClose }) => {
+    return (
+      <Modal show={show} onHide={handleClose} size="lg" centered className="project-modal">
+        <Modal.Header closeButton className="bg-dark text-light">
+          <Modal.Title>{project.title}</Modal.Title>
+        </Modal.Header>
+        <Modal.Body className="bg-dark text-light">
+          <Carousel fade className="mb-4">
+            {project.images.map((img, idx) => (
+              <Carousel.Item key={idx}>
+                <img
+                  className="d-block w-100"
+                  src={img}
+                  alt={`${project.title} screenshot ${idx + 1}`}
+                  style={{ maxHeight: '400px', objectFit: 'contain' }}
+                />
+              </Carousel.Item>
+            ))}
+          </Carousel>
+          
+          <h5>Description</h5>
+          <p>{project.description}</p>
+          
+          <h5 className="mt-4">Features</h5>
+          <ul>
+            {project.features.map((feature, idx) => (
+              <li key={idx}>{feature}</li>
+            ))}
+          </ul>
+          
+          <h5 className="mt-4">Technologies</h5>
+          <div className="d-flex flex-wrap gap-2">
+            {project.technologies.map((tech, idx) => (
+              <Badge 
+                key={idx} 
+                bg={project.category === "MERN Stack" ? "primary" : "warning"}
+              >
+                {tech}
+              </Badge>
+            ))}
+          </div>
+        </Modal.Body>
+        <Modal.Footer className="bg-dark border-secondary">
+          <Button variant="secondary" onClick={handleClose}>
+            Close
+          </Button>
+          <Button variant="primary" as="a" href="#" target="_blank">
+            <Github size={16} className="me-2" /> View Code
+          </Button>
+        </Modal.Footer>
+      </Modal>
     );
   };
 
@@ -334,6 +460,25 @@ const Projects = () => {
         .nav-pills .nav-link.active {
           background-color: #0d6efd;
           color: #fff;
+        }
+        
+        .carousel-control-next, 
+        .carousel-control-prev {
+          width: 5%;
+        }
+        
+        .carousel-control-next-icon, 
+        .carousel-control-prev-icon {
+          background-color: rgba(0, 0, 0, 0.5);
+          border-radius: 50%;
+          width: 30px;
+          height: 30px;
+          background-size: 60%;
+        }
+        
+        .project-modal .carousel {
+          border-radius: 8px;
+          overflow: hidden;
         }
       `}</style>
     </div>

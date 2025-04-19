@@ -1,10 +1,11 @@
 import React from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
-import { Github, Linkedin, Twitter, Instagram, ChevronRight } from 'lucide-react';
+import { Github, Linkedin, Twitter, Instagram, ChevronRight,MapPin, MapIcon } from 'lucide-react';
 import { useInView } from 'react-intersection-observer';
 import SkillsSearch from '../components/SkillsSearch';
-
+import ExperienceTimeline from '../components/ExpreiencedTimeLines';
+import SecurityResearch from '../components/SecurityResearcher';
 const Home = () => {
   const navigate = useNavigate();
   
@@ -46,11 +47,11 @@ const Home = () => {
                   Hello, I'm <span className="text-primary">Uday Kiran Pedda</span>
                 </h1>
                 <div className="typed-text mb-4">
-                  <h2>
+                  <h3>
                     <span className="text-primary fw-bold" style={{ borderRight: '3px solid #0d6efd', paddingRight: '5px', animation: 'blink 1s step-end infinite' }}>
-                      Full Stack & Blockchain Developer
+                 Welcome to the Web2 && Web3 Space 
                     </span>
-                  </h2>
+                  </h3>
                 </div>
               </div>
               
@@ -61,12 +62,14 @@ const Home = () => {
                 transitionDelay: '0.2s'
               }}>
                 <p className="lead text-light">
-                  Leveraging expertise in <span className="text-primary">MERN Stack Development</span> and{' '}
-                  <span className="text-primary">Ethereum Blockchain (DApps)</span> to build scalable, secure, and
-                  innovative applications.
+       
                 </p>
+               
               </div>
-              
+            <SecurityResearch/>
+              <ExperienceTimeline/> 
+
+
               <div ref={buttonsRef} className={`d-flex gap-3 flex-wrap justify-content-center justify-content-lg-start ${buttonsIsVisible ? 'animate-fade-in' : 'opacity-0'}`} style={{ 
                 transition: 'all 0.8s ease-out',
                 opacity: buttonsIsVisible ? 1 : 0,
@@ -88,7 +91,8 @@ const Home = () => {
                   Contact Me <ChevronRight size={18} className="ms-1" />
                 </Button>
               </div>
-              
+              <p></p>
+              <h6> <MapPin/> India,Andhra Pradesh, Vizianagaram </h6>
               <div className="mt-4 d-flex gap-3 justify-content-center justify-content-lg-start" style={{ 
                 transition: 'all 0.8s ease-out',
                 opacity: buttonsIsVisible ? 1 : 0,

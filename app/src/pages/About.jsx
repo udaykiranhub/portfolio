@@ -39,10 +39,10 @@ const About = () => {
           transform: headingIsVisible ? 'translateY(0)' : 'translateY(20px)'
         }}>
           <h1 className="section-title">About Me</h1>
-          <p className="lead text-light mx-auto" style={{ maxWidth: '800px' }}>
+          {/* <p className="lead text-light mx-auto" style={{ maxWidth: '800px' }}>
             Passionate Full Stack Developer and Blockchain Expert with a focus on building 
             innovative, secure, and scalable applications.
-          </p>
+          </p> */}
         </div>
         
         <div ref={contentRef} style={{ 
@@ -102,7 +102,7 @@ const About = () => {
                   </div>
                   <Card.Title className="mb-3 text-warning">Skills</Card.Title>
                   <Card.Text>
-                    Proficient in MERN Stack, Ethereum Blockchain Development, Solidity, and various web technologies.
+                    Proficient in MERN Stack,  Blockchain Development .
                   </Card.Text>
                   <Button 
                     variant="outline-warning" 
@@ -118,15 +118,41 @@ const About = () => {
           
           <Row className="mt-5">
             <Col lg={12}>
+
+
+
+
               <Card className="bg-dark text-light border-0 shadow p-4">
                 <Card.Body>
                   <h3 className="mb-4 text-primary">Professional Summary</h3>
-                  <p>
-                    Leveraging expertise in <Badge bg="primary">MERN Stack Development</Badge> and{' '}
-                    <Badge bg="warning">Ethereum Blockchain (DApps)</Badge> to build scalable, secure, and
-                    innovative applications. Committed to continuous learning and staying updated with emerging
-                    technologies.
-                  </p>
+                  <p className="lead">
+ Passionate about both <span className="text-primary">Web2</span> and <span className="text-warning">Web3</span> technologies. 
+  I specialize in building secure applications using modern stacks like <strong>MERN</strong>, while also exploring 
+  blockchain development with <strong>Ethereum, Solidity, and smart contract security</strong>.
+</p>
+
+<p>
+  Currently deepening my security expertise through <strong>CTF competitions</strong> and <strong>smart contract audits</strong>. 
+  Looking for roles in either:
+</p>
+
+<ul className="list-unstyled mb-3">
+  <li className="mb-2">
+    <i className="fas fa-code me-2 text-muted"></i>
+    <strong>Full-stack development</strong> (Web2 or Web3 applications)
+  </li>
+  <li>
+    <i className="fas fa-shield-alt me-2 text-muted"></i>
+    <strong>Security research</strong> (Blockchain/smart contract security)
+  </li>
+</ul>
+
+<p className="text-muted">
+  Always learning and experimenting with new technologies to build safer, more efficient systems.
+</p>
+
+
+
                   
                   <h4 className="mt-4 mb-3 text-primary">Current Role</h4>
                   <p>
@@ -134,31 +160,15 @@ const About = () => {
                     compensation arrangements while maintaining commitment to delivering exceptional value and quality results.
                   </p>
                   
-                  <h4 className="mt-4 mb-3 text-primary">Achievements</h4>
-                  <ul className="list-unstyled">
-                    <li className="mb-2 d-flex align-items-start">
-                      <Award size={20} className="text-warning me-2 mt-1" />
-                      <span>Industrial Experience in full-stack development</span>
-                    </li>
-                    <li className="mb-2 d-flex align-items-start">
-                      <Award size={20} className="text-warning me-2 mt-1" />
-                      <span>Technical Lead in College Projects</span>
-                    </li>
-                    <li className="mb-2 d-flex align-items-start">
-                      <Award size={20} className="text-warning me-2 mt-1" />
-                      <span>Worked on diverse Real-Time Projects</span>
-                    </li>
-                    <li className="mb-2 d-flex align-items-start">
-                      <Award size={20} className="text-warning me-2 mt-1" />
-                      <span>Participated in Hackathons</span>
-                    </li>
-                    <li className="mb-2 d-flex align-items-start">
-                      <Award size={20} className="text-warning me-2 mt-1" />
-                      <span>Successfully completed Freelancing Tasks</span>
-                    </li>
-                  </ul>
+                
                 </Card.Body>
               </Card>
+
+
+
+
+
+
             </Col>
           </Row>
         </div>

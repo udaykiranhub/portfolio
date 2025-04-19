@@ -82,6 +82,7 @@ const SkillsModal = ({ show, handleClose }) => {
         { name: "Render", details: "Web application hosting" },
         { name: "Vercel", details: "Frontend deployment" },
         { name: "Cloudinary", details: "Media storage and optimization" },
+        {name:"Payment Gateway",details:"payment system for website!"}
       ],
     },
   ];

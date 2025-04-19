@@ -152,18 +152,9 @@ const Contact = () => {
                     </a>
                   </div>
                   
-                  <div className="mt-5">
-                    <h4 className="mb-3 text-primary">Education</h4>
-                    <Badge bg="light" text="dark" className="d-block p-3 mb-2">
-                      <strong>Institute:</strong> Lendi Institute of Engineering and Technology
-                    </Badge>
-                    <Badge bg="light" text="dark" className="d-block p-3 mb-2">
-                      <strong>Degree:</strong> Bachelor of Technology (B.Tech)
-                    </Badge>
-                    <Badge bg="light" text="dark" className="d-block p-3">
-                      <strong>Specialization:</strong> Computer Science and Engineering
-                    </Badge>
-                  </div>
+      
+
+
                 </Card.Body>
               </Card>
             </Col>

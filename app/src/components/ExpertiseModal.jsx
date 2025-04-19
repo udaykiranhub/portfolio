@@ -57,9 +57,9 @@ const ExpertiseModal = ({ show, handleClose }) => {
             <li className="mb-3 d-flex align-items-center">
               <CheckCircle className="expertise-icon me-3" size={20} /> 
               <span>
-                Smart Contract{" "}
+                Security Researcher {" "}
                 <Badge bg="dark" pill className="ms-2">
-                  Auditing
+           
                 </Badge>
               </span>
             </li>
@@ -71,7 +71,7 @@ const ExpertiseModal = ({ show, handleClose }) => {
           <ul className="expertise-list list-unstyled mt-3">
             <li className="mb-3 d-flex align-items-center">
               <Trophy className="expertise-icon me-3" size={20} /> 
-              <span>Industrial Experience</span>
+              <span>Industrial Experience With internship and reelancing Tasks</span>
             </li>
             <li className="mb-3 d-flex align-items-center">
               <Trophy className="expertise-icon me-3" size={20} /> 
@@ -85,10 +85,7 @@ const ExpertiseModal = ({ show, handleClose }) => {
               <Trophy className="expertise-icon me-3" size={20} /> 
               <span>Hackathon Participation</span>
             </li>
-            <li className="mb-3 d-flex align-items-center">
-              <Trophy className="expertise-icon me-3" size={20} /> 
-              <span>Freelancing Tasks</span>
-            </li>
+       
           </ul>
         </Alert>
       </Modal.Body>

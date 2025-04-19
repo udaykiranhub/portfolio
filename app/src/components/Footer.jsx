@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import { Github, Linkedin, Instagram, Twitter, Mail, Phone } from 'lucide-react';
+import { Github, Linkedin, Instagram, Twitter, Mail, Phone,MapPinIcon } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -39,6 +39,7 @@ const Footer = () => {
               <li><a href="/about" style={linkStyle}>About</a></li>
               <li><a href="/projects" style={linkStyle}>Projects</a></li>
               <li><a href="/contact" style={linkStyle}>Contact</a></li>
+              
             </ul>
           </Col>
           
@@ -110,15 +111,23 @@ const Footer = () => {
                 <Phone style={iconStyle} /> +91 6305355185
               </a>
             </div>
+        
           </Col>
+
+
         </Row>
+
+
+   
         
         <hr className="my-4 bg-secondary" />
         
         <Row>
           <Col className="text-center">
-            <p className="mb-0 text-muted">
-              &copy; {currentYear} Uday Kiran Pedda. All rights reserved.
+
+
+            <p className="mb-0 text-info">
+              &copy;2025 Uday Kiran Pedda. All rights reserved.
             </p>
           </Col>
         </Row>
