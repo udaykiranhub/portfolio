@@ -127,7 +127,7 @@ const Home = () => {
                   border: '1px solid rgba(255, 255, 255, 0.1)',
                   boxShadow: '0 10px 30px rgba(0, 0, 0, 0.2)',
                 }}>
-                  <h3 className="mb-3 text-primary text-center">Check My Skills</h3>
+                  <h3 className="mb-3 text-primary text-center">What I’m Good At</h3>
                   <SkillsSearch />
                 </div>
               </div>

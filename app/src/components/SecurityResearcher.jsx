@@ -27,7 +27,7 @@ const SecurityResearch = () => {
   return (
     <div className="my-5 py-5">
       <h2 className="text-primary mb-4">Security Research</h2>
-      <p className="lead mb-5">My analysis on the Block chain </p>
+      <p className="lead mb-5">Analysis on the Block Chain </p>
       
       <div className="row">
         {highlights.map((item, index) => (
@@ -50,7 +50,7 @@ const SecurityResearch = () => {
         <Button 
           variant="outline-primary" 
           size="lg"
-          href="https://udaykiranhub.github.io/udaykiranpedda-blog/" 
+          href="https://blockchainsecurity-udaykiranpedda.netlify.app/" 
           target="_blank"
           rel="noopener noreferrer"
         >
