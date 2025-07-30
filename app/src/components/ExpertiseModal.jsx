@@ -22,18 +22,18 @@ const ExpertiseModal = ({ show, handleClose }) => {
         <Alert variant="success" className="expertise-alert">
           <strong style={{ fontSize: "1.4rem", color: "#198754" }}>Key Skills:</strong>
           <ul className="expertise-list list-unstyled mt-3">
-            <li className="mb-3 d-flex align-items-center">
+            {/* <li className="mb-3 d-flex align-items-center">
               <CheckCircle className="expertise-icon me-3" size={20} /> 
               <span>Web Page Optimization</span>
-            </li>
+            </li> */}
             <li className="mb-3 d-flex align-items-center">
               <CheckCircle className="expertise-icon me-3" size={20} /> 
               <span>Web Hosting</span>
             </li>
-            <li className="mb-3 d-flex align-items-center">
+            {/* <li className="mb-3 d-flex align-items-center">
               <CheckCircle className="expertise-icon me-3" size={20} /> 
               <span>Efficient DApp Development</span>
-            </li>
+            </li> */}
             <li className="mb-3 d-flex align-items-center">
               <CheckCircle className="expertise-icon me-3" size={20} /> 
               <span>Application State Management (Redux)</span>
@@ -42,10 +42,10 @@ const ExpertiseModal = ({ show, handleClose }) => {
               <CheckCircle className="expertise-icon me-3" size={20} /> 
               <span>SEO Optimization</span>
             </li>
-            <li className="mb-3 d-flex align-items-center">
+            {/* <li className="mb-3 d-flex align-items-center">
               <CheckCircle className="expertise-icon me-3" size={20} /> 
               <span>MongoDB Aggregation Pipeline</span>
-            </li>
+            </li> */}
             <li className="mb-3 d-flex align-items-center">
               <CheckCircle className="expertise-icon me-3" size={20} /> 
               <span>Integrating Cloud Services</span>
@@ -71,11 +71,11 @@ const ExpertiseModal = ({ show, handleClose }) => {
           <ul className="expertise-list list-unstyled mt-3">
             <li className="mb-3 d-flex align-items-center">
               <Trophy className="expertise-icon me-3" size={20} /> 
-              <span>Industrial Experience With internship and reelancing Tasks</span>
+              <span>Industrial Experience With internship and freelancing </span>
             </li>
             <li className="mb-3 d-flex align-items-center">
               <Trophy className="expertise-icon me-3" size={20} /> 
-              <span>Technical Lead in College Projects</span>
+              <span>Technical Lead in College from GreeksForGeeks</span>
             </li>
             <li className="mb-3 d-flex align-items-center">
               <Trophy className="expertise-icon me-3" size={20} /> 
@@ -83,7 +83,7 @@ const ExpertiseModal = ({ show, handleClose }) => {
             </li>
             <li className="mb-3 d-flex align-items-center">
               <Trophy className="expertise-icon me-3" size={20} /> 
-              <span>Hackathon Participation</span>
+              <span>Accepted findings in Security platforms </span>
             </li>
        
           </ul>

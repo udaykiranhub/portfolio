@@ -124,44 +124,15 @@ const About = () => {
 
               <Card className="bg-dark text-light border-0 shadow p-4">
                 <Card.Body>
-                  <h3 className="mb-4 text-primary">Professional Summary</h3>
-                  <p className="lead">
- Passionate about both <span className="text-primary">Web2</span> and <span className="text-warning">Web3</span> technologies. 
-  I specialize in building secure applications using modern stacks like <strong>MERN</strong>, while also exploring 
-  blockchain development with <strong>Ethereum, Solidity, and smart contract security</strong>.
-</p>
+                  <h3 className="mb-4 text-primary">Objective</h3>
+<p className="lead">
 
-<p>
-  Currently deepening my security expertise through <strong>CTF competitions</strong> and <strong>smart contract audits</strong>. 
-  Looking for roles in either:
-</p>
-
-<ul className="list-unstyled mb-3">
-  <li className="mb-2">
-    <i className="fas fa-code me-2 text-muted"></i>
-    <strong>Full-stack development</strong> (Web2 or Web3 applications)
-  </li>
-  <li>
-    <i className="fas fa-shield-alt me-2 text-muted"></i>
-    <strong>Security research</strong> (Blockchain/smart contract security)
-  </li>
-</ul>
-
-<p className="text-muted">
-  Always learning and experimenting with new technologies to build safer, more efficient systems.
+Aiming to grow by building modern Web2 and Web3 applications, exploring smart contract security, and improving my skills in full-stack development.
 </p>
 
 
-
-                  
-                  <h4 className="mt-4 mb-3 text-primary">Current Role</h4>
-                  <p>
-                    Full Stack Developer specializing in MERN Stack and Blockchain Development. Open to competitive 
-                    compensation arrangements while maintaining commitment to delivering exceptional value and quality results.
-                  </p>
-                  
-                
-                </Card.Body>
+       
+          </Card.Body>
               </Card>
 
 

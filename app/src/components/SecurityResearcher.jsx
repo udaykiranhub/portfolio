@@ -11,23 +11,24 @@ const SecurityResearch = () => {
       count: "10+"
     },
     {
-      title: "CTF Competitions",
+      title: "Playing CTF ",
       description: "Participating in blockchain security challenges",
       icon: <Lock size={24} className="text-warning" />,
       count: "15+"
     },
     {
-      title: "Vulnerabilities Found",
-      description: "Critical bugs discovered in DeFi protocols",
+      title: "Participating",
+description: " Security contests in  Cantina.xyz, Code4rena, and Codehawks."
+,
       icon: <Bug size={24} className="text-danger" />,
-      count: "5+"
+      count: "3"
     }
   ];
 
   return (
     <div className="my-5 py-5">
       <h2 className="text-primary mb-4">Security Research</h2>
-      <p className="lead mb-5">Analysis on the Block Chain </p>
+      <p className="lead mb-5">My Status </p>
       
       <div className="row">
         {highlights.map((item, index) => (
@@ -37,9 +38,9 @@ const SecurityResearch = () => {
                 <div className="mb-3">
                   {item.icon}
                 </div>
-                <h3>{item.title}</h3>
+                <h4>{item.title}</h4>
                 <Badge bg="primary" pill className="mb-3">{item.count}</Badge>
-                <Card.Text className="text-muted">{item.description}</Card.Text>
+                <Card.Text className="text-primary">{item.description}</Card.Text>
               </Card.Body>
             </Card>
           </div>

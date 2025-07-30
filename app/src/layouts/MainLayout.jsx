@@ -5,12 +5,12 @@ import Footer from '../components/Footer';
 
 const MainLayout = () => {
   return (
-    <div className="d-flex flex-column min-vh-100">
+    <div className="d-flex flex-column min-vh-100" style={{ marginBottom: '10%' }}>
       <Navbar />
       <main className="flex-grow-1">
         <Outlet />
       </main>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };

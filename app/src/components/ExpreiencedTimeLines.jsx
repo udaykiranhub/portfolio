@@ -40,9 +40,9 @@ const ExperienceTimeline = () => {
               <exp.Icon size={20} color="#fff" />
             </div>
             <div className="timeline-content" style={{ borderLeftColor: exp.color }}>
-              <div className="timeline-date">{exp.date}</div>
+              {/* <div className="timeline-date">{exp.date}</div> */}
               <h3 className="timeline-title">{exp.title}</h3>
-              <h4 className="timeline-subtitle">{exp.company}</h4>
+              {/* <h4 className="timeline-subtitle">{exp.company}</h4> */}
               <p className="timeline-description">{exp.description}</p>
             </div>
           </div>

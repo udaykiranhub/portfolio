@@ -83,7 +83,8 @@ const Contact = () => {
           transitionDelay: '0.2s'
         }}>
           <Row className="g-5">
-            <Col lg={5}>
+            {/* <Col lg={5} > */}
+              <Col xs={12} md={8} lg={5} className="mx-auto text-center">
               <Card className="bg-dark text-light border-0 shadow h-100">
                 <Card.Body className="p-4">
                   <h3 className="mb-4 text-primary d-flex align-items-center gap-2">
@@ -159,7 +160,7 @@ const Contact = () => {
               </Card>
             </Col>
             
-            <Col lg={7}>
+            {/* <Col lg={7}>
               <Card className="bg-dark text-light border-0 shadow h-100">
                 <Card.Body className="p-4">
                   <h3 className="mb-4 text-primary d-flex align-items-center gap-2">
@@ -257,7 +258,7 @@ const Contact = () => {
                   </Form>
                 </Card.Body>
               </Card>
-            </Col>
+            </Col> */}
           </Row>
         </div>
       </Container>
