@@ -8,20 +8,20 @@ const SecurityResearch = () => {
       title: "Smart Contract Audits",
       description: "Identifying vulnerabilities in Ethereum smart contracts",
       icon: <Shield size={24} className="text-primary" />,
-      count: "10+"
+      // count: "10+"
     },
     {
       title: "Playing CTF ",
       description: "Participating in blockchain security challenges",
       icon: <Lock size={24} className="text-warning" />,
-      count: "15+"
+      // count: "15+"
     },
     {
       title: "Participating",
 description: " Security contests in  Cantina.xyz, Code4rena, and Codehawks."
 ,
       icon: <Bug size={24} className="text-danger" />,
-      count: "3"
+      // count: "3"
     }
   ];
 

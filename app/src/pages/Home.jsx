@@ -108,9 +108,9 @@ const Home = () => {
                 <a href="https://x.com/UdayKir03362466?t=ZF7UaXqGV9zrYER1e13xpQ&s=08" target="_blank" rel="noopener noreferrer" className="social-icon">
                   <Twitter size={22} className="text-light" />
                 </a>
-                <a href="https://www.instagram.com/u_day_k_iran?igsh=b3huY3lvcXB2OXhh" target="_blank" rel="noopener noreferrer" className="social-icon">
+                {/* <a href="https://www.instagram.com/u_day_k_iran?igsh=b3huY3lvcXB2OXhh" target="_blank" rel="noopener noreferrer" className="social-icon">
                   <Instagram size={22} className="text-light" />
-                </a>
+                </a> */}
               </div>
             </Col>
             

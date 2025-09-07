@@ -72,7 +72,7 @@ const Contact = () => {
         }}>
           <h1 className="section-title">Get In Touch</h1>
           <p className="lead text-light mx-auto" style={{ maxWidth: '800px' }}>
-            Feel free to reach out for collaborations, opportunities, or just to say hello!
+Feel free to reach out for collaboration.
           </p>
         </div>
         
@@ -143,14 +143,14 @@ const Contact = () => {
                     >
                       <Twitter size={24} />
                     </a>
-                    <a 
+                    {/* <a 
                       href="https://www.instagram.com/u_day_k_iran?igsh=b3huY3lvcXB2OXhh" 
                       target="_blank" 
                       rel="noopener noreferrer" 
                       className="social-link"
                     >
                       <Instagram size={24} />
-                    </a>
+                    </a> */}
                   </div>
                   
       
